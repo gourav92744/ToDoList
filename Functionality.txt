@@ -1,0 +1,28 @@
+Functionality
+-----------------------
+1. Add ToDo
+2. Delete Activity
+3. Search Activity
+------------------------
+Add ToDo
+----------
+Step-1: Capture the Event of Submit Button
+Step-2: Get the input Value text
+Step-3: Creat the new Li Tag with the value given by Step-2
+Step-4: Append the Li Tag into the existing Ul Tag
+-------------------------------------------------------------
+Delete Item
+------------
+Step-1: Capture the Event of Delete Button
+Step-2: Search for Self Mentioned Class in clicked button tag
+Step-3: If it finds the class Then it will give a confirm box
+Step-4: On click 'OK' it will return true then find its parent li class which become child of Ul class
+Stap-5: Remove child from Ul parent class
+---------------------------------------------------------------------------------------------------------
+Search Item
+------------
+Step-1: Capture the Event of Search area on Keyup
+Step-2: Extract the value and convert it in LowerCase
+Step-3: Track all li elements(Collection form)
+Step-4: Change it into Array and apply Foreach to Extract value and convert it in LowerCase
+Step-5: Compare them if true then display block otherwise none

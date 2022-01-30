@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <title>ToDoList</title>
+    <style>
+        .container-fluid{
+            background-color:#075E54;
+            color: #fff;
+        }
+    </style>
+</head>
+<body id="main">
+    <div class="container-fluid text-center" id="header">
+            <h1><b>ToDoList</b></h1>
+            <h4>List here what you want to achieve Today</h4>
+    </div>
+    <br>
+    
+        
+    </div>
+    <div class="container card card-body" id="card">
+        <div class="row">
+            <div class="col-sm-6">
+        <h2 class="title">Add Goals</h2>
+        <form class="form-inline mb-3">
+        <input type="text" class="form-control mr-2" id="goal" placeholder="Add your Activties...">
+        <input type="button" class="btn btn-dark" value="Submit" id="btn">
+         </form>
+         </div>
+       <div class="col-sm-6">
+        <form>
+            <input type="text" class="form-control" id="filter" placeholder="Search your Activty here...">
+        </form>
+       </div>
+        </div>
+    <h4 class="title">Unachieved</h4>
+    <ul class="list-group" id="goals">
+        <li class="list-group-item"> Demo-Activty<button class="btn btn-danger btn-sm float-right delete">Delete</button><button class="btn btn-success btn-sm float-right">Check</button></li>
+        <!-- <li class="list-group-item">Item-2<button class="btn btn-danger btn-sm float-right delete">Delete</button><button class="btn btn-success btn-sm float-right">Check</button></li>
+        <li class="list-group-item">Item-3<button class="btn btn-danger btn-sm float-right delete">Delete</button><button class="btn btn-success btn-sm float-right">Check</button></li> -->
+    </ul>
+    <h4 class="title">Achieved</h4>
+    <ul class="list-group" id="achieve">
+        <li class="list-group-item">Item-1<button class="btn btn-primary btn-sm float-right">Completed</button></li>
+        <li class="list-group-item">Item-2<button class="btn btn-primary btn-sm float-right">Completed</button></li>
+        <li class="list-group-item">Item-3<button class="btn btn-primary btn-sm float-right">Completed</button></li>
+    </ul>
+    </div>
+    </div>
+    <p class="text-center"><b>"Check-Button and Achieved Functionality Currently not in Work"</b></p>
+  <script src="TodoList.js"></script>
+</body>
+</html>
